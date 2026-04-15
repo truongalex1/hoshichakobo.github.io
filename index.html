@@ -59,7 +59,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Header Logo -->
             <a href="#" class="block">
-                <!-- Using %20 to handle any spaces if present, matching the HighRes logo -->
+                <!-- Using relative path and exact case -->
                 <img src="HOSHI_CHA_KOBO_Logo_HighRes.png" alt="Hoshi Cha Kobō" class="h-8 md:h-10 w-auto object-contain">
             </a>
             <div>
@@ -120,14 +120,14 @@
             <div class="grid grid-cols-2 gap-4 sm:gap-8 h-full items-center">
                  <!-- Image 1: Matcha Tin (Vertical constraint) -->
                  <div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden group shadow-xl">
-                     <!-- Note the %20 which represents spaces in URL encoding and exact case matching! -->
+                     <!-- Using relative path with %20 for spaces and uppercase .JPG -->
                      <img src="Hoshi%20Hana%20Matcha%20Tin.JPG" alt="Hoshi Hana Matcha Tin" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                      <div class="absolute inset-0 bg-kobo-green/10 transition-opacity duration-500 group-hover:opacity-0"></div>
                  </div>
                  
                  <!-- Image 2: 500g Bag (Staggered downward) -->
                  <div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden group mt-16 sm:mt-24 shadow-xl">
-                     <!-- Note the %20 which represents spaces in URL encoding and exact case matching! -->
+                     <!-- Using relative path with %20 for spaces and uppercase .JPG -->
                      <img src="Hoshi%20Hana%20Matcha%20500g.JPG" alt="Hoshi Hana Matcha 500g Bag" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                      <div class="absolute inset-0 bg-kobo-green/10 transition-opacity duration-500 group-hover:opacity-0"></div>
                  </div>
