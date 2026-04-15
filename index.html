@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoshi Cha Kobō | Premium Japanese Matcha</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Premium Japanese Matcha from Shizuoka. A concept and lifestyle by Cha Kobō. Global distribution by AERI GROUP LIMITED.">
+    
+    <!-- Fonts: Elegant Serif for Japanese Heritage, Clean Sans for Modernity -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN for zero-build setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Cha Kobō Brand Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kobo: {
+                            cream: '#F9EFE8',
+                            red: '#E51F37',
+                            green: '#1E3000'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Silent Luxury Fade-In Animation */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out forwards;
+            opacity: 0;
+        }
+        .delay-1 { animation-delay: 0.5s; }
+        .delay-2 { animation-delay: 1s; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-kobo-cream text-kobo-green font-sans antialiased selection:bg-kobo-red selection:text-kobo-cream">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-kobo-cream/90 backdrop-blur-md border-b border-kobo-green/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-serif text-xl tracking-widest font-semibold">HOSHI CHA KOBŌ</div>
+            <div>
+                <a href="#b2b" class="text-sm tracking-wide uppercase hover:text-kobo-red transition-colors duration-300">B2B Partnership</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-20">
+        <div class="text-center max-w-4xl fade-in">
+            <p class="text-xs md:text-sm tracking-[0.3em] uppercase mb-6 text-kobo-green/70">星茶工房</p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-8">
+                Elevating the <br>
+                <span class="italic text-kobo-red">Standard</span> of Matcha.
+            </h1>
+            <p class="text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto text-kobo-green/80 delay-1 fade-in">
+                Rooted in the volcanic soils of Shizuoka. <br class="hidden md:block">
+                Unleashed with the creative spirit of Saigon.
+            </p>
+        </div>
+    </section>
+
+    <!-- The Standard Section (Pulled from Pitch Deck) -->
+    <section class="py-24 px-6 border-t border-kobo-green/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left: Text -->
+            <div class="space-y-12">
+                <div>
+                    <h2 class="font-serif text-3xl md:text-4xl mb-4">The Grade Myth</h2>
+                    <p class="font-light leading-relaxed text-kobo-green/80">
+                        "Ceremonial Grade" is an industry convention, not a regulated legal standard. True quality is defined by harvest time and processing. We use only first-harvest leaves.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="font-serif text-3xl md:text-4xl mb-4">The Region Myth</h2>
+                    <p class="font-light leading-relaxed text-kobo-green/80">
+                        While Uji is famous, Shizuoka—the "Tea Capital of Japan"—offers superior terroir. Our matcha is 100% sourced from the volcanic soil of Shizuoka.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="font-serif text-3xl md:text-4xl mb-4">The Integrity Myth</h2>
+                    <p class="font-light leading-relaxed text-kobo-green/80">
+                        Repackaging often leads to oxidation. Direct-from-Japan packaging ensures the product remains pristine. We guarantee 100% "Made in Japan" integrity with zero local repackaging.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right: Image Placeholder -->
+            <div class="relative h-[600px] w-full bg-kobo-green/5 rounded-2xl overflow-hidden flex items-center justify-center group">
+                <!-- Replace this div with an <img> tag once the tin photo is uploaded to GitHub -->
+                <div class="text-center p-8">
+                    <p class="font-serif text-2xl italic text-kobo-green/50 mb-2">Hoshi Hana Tin</p>
+                    <p class="text-xs uppercase tracking-widest text-kobo-green/40">Visual Placeholder</p>
+                </div>
+                <!-- Aesthetic borders -->
+                <div class="absolute inset-4 border border-kobo-green/10 rounded-xl transition-all duration-700 group-hover:scale-95 group-hover:border-kobo-red/30"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- B2B CTA Section -->
+    <section id="b2b" class="py-32 px-6 bg-kobo-red text-kobo-cream text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-serif text-4xl md:text-6xl mb-6">Partner With Us</h2>
+            <p class="font-light text-lg md:text-xl mb-10 opacity-90">
+                We supply premium and mid-tier establishments across the globe. Secure your supply chain with authentic, single-origin Japanese matcha. Margin friendly, quality guaranteed.
+            </p>
+            <a href="mailto:hello@chakobo.com" class="inline-block bg-kobo-cream text-kobo-red font-semibold tracking-widest uppercase text-sm px-10 py-4 rounded-full hover:bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                Inquire for B2B Pricing
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-kobo-green text-kobo-cream py-16 px-6 text-center md:text-left">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <h3 class="font-serif text-2xl mb-4">Cha Kobō</h3>
+                <p class="font-light text-sm opacity-70">Saigon • Shizuoka • Global</p>
+            </div>
+            <div>
+                <h4 class="text-sm tracking-widest uppercase mb-4 opacity-50">Global Distribution</h4>
+                <p class="font-light text-sm opacity-80 leading-relaxed">
+                    AERI GROUP LIMITED<br>
+                    Hong Kong
+                </p>
+            </div>
+            <div class="md:text-right">
+                <a href="https://www.chakobotea.com" target="_blank" class="text-sm opacity-70 hover:opacity-100 transition-opacity">Vietnam Retail: chakobotea.com</a><br>
+                <p class="font-light text-xs opacity-50 mt-4">&copy; 2026 AERI GROUP LIMITED. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
