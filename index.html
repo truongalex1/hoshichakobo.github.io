@@ -177,6 +177,227 @@
                     <label for="company" class="absolute left-0 -top-3.5 text-xs tracking-widest uppercase text-kobo-green/50 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-kobo-green">Establishment Name</label>
                 </div>
 
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="relative group">
+                        <select name="business_type" required class="w-full bg-transparent border-b border-kobo-green/30 py-3 text-kobo-green focus:outline-none focus:border-kobo-green transition-colors appearance-none cursor-pointer" id="business_type">
+                            <option value="" disabled selected hidden></option>
+                            <option value="Coffee Shop" class="bg-kobo-cream">Coffee Shop</option>
+                            <option value="Restaurant" class="bg-kobo-cream">Restaurant</option>
+                            <option value="Hotel / Hospitality" class="bg-kobo-cream">Hotel / Hospitality</option>
+                            <option value="Distributor" class="bg-kobo-cream">Distributor</option>
+                            <option value="Other" class="bg-kobo-cream">Other</option>
+                        </select>
+                        <label for="business_type" class="absolute left-0 -top-3.5 text-xs tracking-widest uppercase text-kobo-green/50 transition-all">Type of Business</label>
+                        <!-- Custom dropdown arrow -->
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-kobo-green/50">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group">
+                        <input type="text" name="country" list="country-list" required class="w-full bg-transparent border-b border-kobo-green/30 py-3 text-kobo-green focus:outline-none focus:border-kobo-green transition-colors peer placeholder-transparent" placeholder="Country" id="country">
+                        <label for="country" class="absolute left-0 -top-3.5 text-xs tracking-widest uppercase text-kobo-green/50 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-kobo-green">Country</label>
+                        <datalist id="country-list">
+                            <option value="Afghanistan">
+                            <option value="Albania">
+                            <option value="Algeria">
+                            <option value="Andorra">
+                            <option value="Angola">
+                            <option value="Antigua and Barbuda">
+                            <option value="Argentina">
+                            <option value="Armenia">
+                            <option value="Australia">
+                            <option value="Austria">
+                            <option value="Azerbaijan">
+                            <option value="Bahamas">
+                            <option value="Bahrain">
+                            <option value="Bangladesh">
+                            <option value="Barbados">
+                            <option value="Belarus">
+                            <option value="Belgium">
+                            <option value="Belize">
+                            <option value="Benin">
+                            <option value="Bhutan">
+                            <option value="Bolivia">
+                            <option value="Bosnia and Herzegovina">
+                            <option value="Botswana">
+                            <option value="Brazil">
+                            <option value="Brunei">
+                            <option value="Bulgaria">
+                            <option value="Burkina Faso">
+                            <option value="Burundi">
+                            <option value="Cabo Verde">
+                            <option value="Cambodia">
+                            <option value="Cameroon">
+                            <option value="Canada">
+                            <option value="Central African Republic">
+                            <option value="Chad">
+                            <option value="Chile">
+                            <option value="China">
+                            <option value="Colombia">
+                            <option value="Comoros">
+                            <option value="Congo, Democratic Republic of the">
+                            <option value="Congo, Republic of the">
+                            <option value="Costa Rica">
+                            <option value="Croatia">
+                            <option value="Cuba">
+                            <option value="Cyprus">
+                            <option value="Czechia">
+                            <option value="Denmark">
+                            <option value="Djibouti">
+                            <option value="Dominica">
+                            <option value="Dominican Republic">
+                            <option value="Ecuador">
+                            <option value="Egypt">
+                            <option value="El Salvador">
+                            <option value="Equatorial Guinea">
+                            <option value="Eritrea">
+                            <option value="Estonia">
+                            <option value="Eswatini">
+                            <option value="Ethiopia">
+                            <option value="Fiji">
+                            <option value="Finland">
+                            <option value="France">
+                            <option value="Gabon">
+                            <option value="Gambia">
+                            <option value="Georgia">
+                            <option value="Germany">
+                            <option value="Ghana">
+                            <option value="Greece">
+                            <option value="Grenada">
+                            <option value="Guatemala">
+                            <option value="Guinea">
+                            <option value="Guinea-Bissau">
+                            <option value="Guyana">
+                            <option value="Haiti">
+                            <option value="Honduras">
+                            <option value="Hungary">
+                            <option value="Iceland">
+                            <option value="India">
+                            <option value="Indonesia">
+                            <option value="Iran">
+                            <option value="Iraq">
+                            <option value="Ireland">
+                            <option value="Israel">
+                            <option value="Italy">
+                            <option value="Jamaica">
+                            <option value="Japan">
+                            <option value="Jordan">
+                            <option value="Kazakhstan">
+                            <option value="Kenya">
+                            <option value="Kiribati">
+                            <option value="Korea, North">
+                            <option value="Korea, South">
+                            <option value="Kosovo">
+                            <option value="Kuwait">
+                            <option value="Kyrgyzstan">
+                            <option value="Laos">
+                            <option value="Latvia">
+                            <option value="Lebanon">
+                            <option value="Lesotho">
+                            <option value="Liberia">
+                            <option value="Libya">
+                            <option value="Liechtenstein">
+                            <option value="Lithuania">
+                            <option value="Luxembourg">
+                            <option value="Madagascar">
+                            <option value="Malawi">
+                            <option value="Malaysia">
+                            <option value="Maldives">
+                            <option value="Mali">
+                            <option value="Malta">
+                            <option value="Marshall Islands">
+                            <option value="Mauritania">
+                            <option value="Mauritius">
+                            <option value="Mexico">
+                            <option value="Micronesia">
+                            <option value="Moldova">
+                            <option value="Monaco">
+                            <option value="Mongolia">
+                            <option value="Montenegro">
+                            <option value="Morocco">
+                            <option value="Mozambique">
+                            <option value="Myanmar">
+                            <option value="Namibia">
+                            <option value="Nauru">
+                            <option value="Nepal">
+                            <option value="Netherlands">
+                            <option value="New Zealand">
+                            <option value="Nicaragua">
+                            <option value="Niger">
+                            <option value="Nigeria">
+                            <option value="North Macedonia">
+                            <option value="Norway">
+                            <option value="Oman">
+                            <option value="Pakistan">
+                            <option value="Palau">
+                            <option value="Palestine">
+                            <option value="Panama">
+                            <option value="Papua New Guinea">
+                            <option value="Paraguay">
+                            <option value="Peru">
+                            <option value="Philippines">
+                            <option value="Poland">
+                            <option value="Portugal">
+                            <option value="Qatar">
+                            <option value="Romania">
+                            <option value="Russia">
+                            <option value="Rwanda">
+                            <option value="Saint Kitts and Nevis">
+                            <option value="Saint Lucia">
+                            <option value="Saint Vincent and the Grenadines">
+                            <option value="Samoa">
+                            <option value="San Marino">
+                            <option value="Sao Tome and Principe">
+                            <option value="Saudi Arabia">
+                            <option value="Senegal">
+                            <option value="Serbia">
+                            <option value="Seychelles">
+                            <option value="Sierra Leone">
+                            <option value="Singapore">
+                            <option value="Slovakia">
+                            <option value="Slovenia">
+                            <option value="Solomon Islands">
+                            <option value="Somalia">
+                            <option value="South Africa">
+                            <option value="South Sudan">
+                            <option value="Spain">
+                            <option value="Sri Lanka">
+                            <option value="Sudan">
+                            <option value="Suriname">
+                            <option value="Sweden">
+                            <option value="Switzerland">
+                            <option value="Syria">
+                            <option value="Taiwan">
+                            <option value="Tajikistan">
+                            <option value="Tanzania">
+                            <option value="Thailand">
+                            <option value="Timor-Leste">
+                            <option value="Togo">
+                            <option value="Tonga">
+                            <option value="Trinidad and Tobago">
+                            <option value="Tunisia">
+                            <option value="Turkey">
+                            <option value="Turkmenistan">
+                            <option value="Tuvalu">
+                            <option value="Uganda">
+                            <option value="Ukraine">
+                            <option value="United Arab Emirates">
+                            <option value="United Kingdom">
+                            <option value="United States">
+                            <option value="Uruguay">
+                            <option value="Uzbekistan">
+                            <option value="Vanuatu">
+                            <option value="Vatican City">
+                            <option value="Venezuela">
+                            <option value="Vietnam">
+                            <option value="Yemen">
+                            <option value="Zambia">
+                            <option value="Zimbabwe">
+                        </datalist>
+                    </div>
+                </div>
+
                 <div class="relative group">
                     <textarea name="message" rows="1" required class="w-full bg-transparent border-b border-kobo-green/30 py-3 text-kobo-green focus:outline-none focus:border-kobo-green transition-colors peer placeholder-transparent resize-none" placeholder="Inquiry Details" id="message" oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'"></textarea>
                     <label for="message" class="absolute left-0 -top-3.5 text-xs tracking-widest uppercase text-kobo-green/50 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-kobo-green">Tell us about your needs...</label>
