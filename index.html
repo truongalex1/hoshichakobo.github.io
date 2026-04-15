@@ -57,21 +57,26 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-kobo-cream/90 backdrop-blur-md border-b border-kobo-green/10">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Updated Logo Section -->
+            <!-- Header Logo -->
             <a href="#" class="block">
-                <img src="HOSHI_CHA_KOBO_Logo_HighRes.png" alt="Hoshi Cha Kobō" class="h-8 md:h-12 w-auto object-contain">
+                <!-- Using %20 to handle any spaces if present, matching the HighRes logo -->
+                <img src="HOSHI_CHA_KOBO_Logo_HighRes.png" alt="Hoshi Cha Kobō" class="h-8 md:h-10 w-auto object-contain">
             </a>
             <div>
-                <a href="#b2b" class="text-sm tracking-wide uppercase hover:text-kobo-red transition-colors duration-300">B2B Partnership</a>
+                <a href="#b2b" class="text-xs tracking-widest uppercase hover:text-kobo-red transition-colors duration-300 font-semibold">B2B Partnership</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-20">
-        <div class="text-center max-w-4xl fade-in">
+    <!-- Hero Section (First Fold) -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-24 pb-12">
+        <div class="text-center max-w-4xl fade-in flex flex-col items-center">
+            
+            <!-- Hero Logo -->
+            <img src="HOSHI_CHA_KOBO_Logo_HighRes.png" alt="Hoshi Cha Kobō" class="w-48 md:w-64 lg:w-80 object-contain mb-12 opacity-90">
+
             <p class="text-xs md:text-sm tracking-[0.3em] uppercase mb-6 text-kobo-green/70">星茶工房</p>
-            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-8">
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight mb-8 text-kobo-green">
                 Elevating the <br>
                 <span class="italic text-kobo-red">Standard</span> of Matcha.
             </h1>
@@ -82,7 +87,7 @@
         </div>
     </section>
 
-    <!-- The Standard Section -->
+    <!-- The Standard Section with Vertical Images -->
     <section class="py-32 px-6 border-t border-kobo-green/10">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             
@@ -111,14 +116,19 @@
                 </div>
             </div>
 
-            <!-- Right: Image grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 h-full">
-                 <div class="relative h-[400px] sm:h-auto rounded-xl overflow-hidden group">
-                     <img src="Hoshi_Hana_Matcha_Tin.JPG" alt="Hoshi Hana Matcha Tin" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1582787033503-4927b2f6fb4c?q=80&w=1000&auto=format&fit=crop';" />
+            <!-- Right: Vertical Image Grid (Staggered Layout) -->
+            <div class="grid grid-cols-2 gap-4 sm:gap-8 h-full items-center">
+                 <!-- Image 1: Matcha Tin (Vertical constraint) -->
+                 <div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden group shadow-xl">
+                     <!-- Note the %20 which represents spaces in URL encoding! -->
+                     <img src="Hoshi%20Hana%20Matcha%20Tin.JPG" alt="Hoshi Hana Matcha Tin" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                      <div class="absolute inset-0 bg-kobo-green/10 transition-opacity duration-500 group-hover:opacity-0"></div>
                  </div>
-                 <div class="relative h-[400px] sm:h-auto rounded-xl overflow-hidden group mt-0 sm:mt-12">
-                     <img src="Hoshi_Hana_Matcha_500g.JPG" alt="Hoshi Hana Matcha 500g Bag" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?q=80&w=1000&auto=format&fit=crop';" />
+                 
+                 <!-- Image 2: 500g Bag (Staggered downward) -->
+                 <div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden group mt-16 sm:mt-24 shadow-xl">
+                     <!-- Note the %20 which represents spaces in URL encoding! -->
+                     <img src="Hoshi%20Hana%20Matcha%20500g.JPG" alt="Hoshi Hana Matcha 500g Bag" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                      <div class="absolute inset-0 bg-kobo-green/10 transition-opacity duration-500 group-hover:opacity-0"></div>
                  </div>
             </div>
@@ -187,15 +197,35 @@
 
     <!-- Footer (Dark Green Background) -->
     <footer class="bg-kobo-green text-kobo-cream py-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Brand Column -->
+            <div>
+                <img src="HOSHI_CHA_KOBO_Logo_HighRes.png" alt="Hoshi Cha Kobō" class="h-10 w-auto object-contain mb-6 filter invert brightness-0 opacity-90 mx-auto md:mx-0">
+                <p class="font-light text-sm opacity-70 mb-2">Shizuoka, Japan</p>
+                <p class="font-light text-sm opacity-70">Premium Single-Origin Matcha.</p>
+            </div>
+            
+            <!-- Distribution Column -->
+            <div>
+                <h4 class="text-xs tracking-widest uppercase mb-4 opacity-50 font-semibold">Global Distribution</h4>
+                <p class="font-light text-sm opacity-80 leading-relaxed">
                     AERI GROUP LIMITED<br>
                     Hong Kong
                 </p>
+                <a href="mailto:info@hoshichakobo.com" class="inline-block mt-4 text-sm opacity-70 hover:opacity-100 hover:text-kobo-red transition-all">info@hoshichakobo.com</a>
             </div>
-            <div class="md:text-right">
-                <p class="text-xs opacity-70 mb-1">Official Retail Partner:</p>
-                <a href="https://www.chakobotea.com" target="_blank" class="text-sm font-semibold opacity-90 hover:opacity-100 transition-opacity">Cha Kobō</a>
-                <p class="font-light text-xs opacity-60 mt-1">An exclusive purveyor of Hoshi Cha Kobō matcha.</p>
-                <p class="font-light text-xs opacity-50 mt-4">&copy; 2026 AERI GROUP LIMITED. All Rights Reserved.</p>
+            
+            <!-- Retail Partner Column -->
+            <div class="md:text-right flex flex-col md:items-end">
+                <h4 class="text-xs tracking-widest uppercase mb-4 opacity-50 font-semibold">Official Retail Partner</h4>
+                
+                <!-- Explicit use of the Cha Kobo White Logo here -->
+                <a href="https://www.chakobotea.com" target="_blank" class="block mb-3">
+                    <img src="CHA_KOBO_Logo_RGB_WHITE_Stacked.png" alt="Cha Kobō Retail" class="h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity mx-auto md:mx-0">
+                </a>
+                
+                <p class="font-light text-xs opacity-60 max-w-[200px] mx-auto md:mx-0 md:ml-auto">An exclusive purveyor of Hoshi Cha Kobō matcha.</p>
+                <p class="font-light text-xs opacity-30 mt-8">&copy; 2026 AERI GROUP LIMITED. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
